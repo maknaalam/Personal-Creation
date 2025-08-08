@@ -6,11 +6,11 @@ Implementing randomness to a bot to make it behave more rationally and implement
 
 - Type of AI
 
-= Simple reflex agents
+  = Simple reflex agents
 
-- Properties of this AI (How I consider it)
+- Properties of this AI
 
-|   Task Environment    |     Observable     |     Agents     |     Deterministic     |     Episodic     |     Static     |      Discrete      |
-| :-------------------: | :----------------: | :------------: | :-------------------: | :--------------: | :------------: | :----------------: |
-|      Path Finding     |     Observable     |     Single     |     Deterministic     |     Episodic     |     Static     |      Discrete      |
-|      Action Picker    |     Observable     |     Single     |    Noneterministic    |    Sequential    |     Static     |      Discrete      |
+  |   Task Environment    |     Observable     |     Agents     |     Deterministic     |     Episodic     |     Static     |      Discrete      |
+  | :-------------------: | :----------------: | :------------: | :-------------------: | :--------------: | :------------: | :----------------: |
+  |      Path Finding     |     Observable     |     Single     |     Deterministic     |     Episodic     |     Dynamic    |      Discrete      |
+  |      Action Picker    |     Observable     |     Single     |      Stochastic       |    Sequential    |     Static     |      Discrete      |
