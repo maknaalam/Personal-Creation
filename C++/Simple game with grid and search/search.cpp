@@ -592,7 +592,7 @@ Choose One of this option:
                 e_skill = 3;
             }
         } else {
-            if (randomNumber % 7 == 0 || randomNumber % 6 == 0) 
+            if (randomNumber % 7 == 0 || randomNumber % 6 == 0)
             {
                 if (e_energy < 30)
                 {
@@ -695,10 +695,16 @@ Choose One of this option:
         {
             cout << ascii_art4 << "\n";
             cout << "Miku use ultimate attack\n";
-            p_currentHealth -= 60;
-            e_skill = 0;
-            if (p_currentHealth <= 0) {
-            e_win = 1;
+            if (p_skill == 2)
+            {
+                cout << "But you dodge it\n";
+                p_skill = 0;
+            } else {
+                p_currentHealth -= 60;
+                e_skill = 0;
+                if (p_currentHealth <= 0) {
+                e_win = 1;
+                }
             }
         }
         if (e_win == 1)
